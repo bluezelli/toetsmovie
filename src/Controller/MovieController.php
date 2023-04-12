@@ -59,6 +59,29 @@ class MovieController extends AbstractController
 
     }
 
+//    #[Route('/delete/{id}', name: 'insert')]
+//    public function update(request $request, Genre $genreclass, EntityManagerInterface $entityManager, GenreRepository $genreRepository)
+//    {
+//        //pakt de id uit Genre entity de class Genre dus, deze id willen meegeven aan Genrerepository
+//        $id = $genreclass->getId();
+//        $genre = new Genre();
+//        $genre = $genreRepository->find($id);
+//        $form = $this->renderForm(GenreType::class, $genre);
+//        $form->handleRequest($genre);
+//
+//        if($form->issubmitted() && $form->isvalid()){
+//            $genre = $form->getData();
+//            $entityManager->persist($genre);
+//            $entityManager->flush();
+//            return $this->redirectToRoute('home');
+//        }
+//            return $this->renderForm('update.html.twig',[
+//                'form'=> $form
+//            ]);
+//
+//    }
+
+
     #[Route('/delete/{id}', name: 'insert')]
     public function delete($id, GenreRepository $genreRepository, EntityManagerInterface $entityManager)
     {
