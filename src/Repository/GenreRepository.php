@@ -21,7 +21,7 @@ class GenreRepository extends ServiceEntityRepository
         parent::__construct($registry, Genre::class);
     }
 
-    public function save(Genre $entity, bool $flush = false): void
+    public function save(Genre $entity, bool $flush = true): void
     {
         $this->getEntityManager()->persist($entity);
 

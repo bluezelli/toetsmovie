@@ -7,7 +7,10 @@
 
     {% for genre in genres %}
 
-        {{ genre.name }}
+       <a class="btn btn-dark" href="{{ path('app_movie', {id:genre.id}) }}">{{ genre.name }}</a>
+        <a class="btn btn-dark" href="/insert/{{ genre.id }}">insert</a>
+        <a class="btn btn-dark" href="/delete/{{ genre.id }}">delete</a>
+        <a class="btn btn-dark" href="/update/{{ genre.id }}">update</a>
 
     {% endfor %}
 {% endblock %}
