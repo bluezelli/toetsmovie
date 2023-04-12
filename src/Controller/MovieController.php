@@ -15,6 +15,17 @@ use App\Repository\MovieRepository;
 //use App\Repository\GenreRepository;
 //use Doctrine\ORM\EntityManagerInterface;
 
+//onderste is test pas alleen de entityauto en app/form/auto aan en de repo van auto naar genre
+//use App\Entity\Auto;
+//use App\Form\AutoFormType;
+//use App\Repository\AutoRepository;
+//use Doctrine\ORM\EntityManagerInterface;
+//use Doctrine\Persistence\ManagerRegistry;
+//use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+//use Symfony\Component\HttpFoundation\Request;
+//use Symfony\Component\Routing\Annotation\Route;
+
+
 class MovieController extends AbstractController
 {
     #[Route('/movie', name: 'app_movie')]
